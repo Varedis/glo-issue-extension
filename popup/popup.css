@@ -1,0 +1,58 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+.form-group {
+    margin: 10px;
+}
+.form-group > label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+}
+.form-group > .form-control {
+    width: 600px;
+}
+
+#image-to-upload {
+    width: 600px;
+    height: 100%;
+}
+
+select, input, textarea {
+    font-size: 16px;
+}
+
+button {
+    height: 28px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+button:hover {
+    box-shadow: 0 6px 10px rgba(0,0,0,0.23), 0 10px 30px rgba(0,0,0,0.19);
+}
+button.submit {
+    background-color: #388E3C;
+    color: #FFF;
+    box-shadow: 1;
+}
+
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+.clearfix {
+    clear: both;
+}

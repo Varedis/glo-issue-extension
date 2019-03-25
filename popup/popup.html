@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+	<div id="patToken" class="hide">
+		<div>
+			<p>In order to use this extension, please generate a PAT token to access the GitKraken API.</p>
+			<p>You can generate a token <a href="https://app.gitkraken.com/pats">here</a></p>
+		</div>
+		<form name="tokenForm" id="tokenForm" method="POST">
+			<div class="form-group">
+				<label for="token">PAT token:</label>
+				<input type="text" name="token" id="token" class="form-control">
+			</div>
+			<div class="form-group">
+				<button type="submit" class="pull-right submit">Submit token</button>
+			</div>
+			<div class="clearfix"></div>
+		</form>
+	</div>
+
+	<div>
+		<button id="createIssue" class="hide">Create issue</button>
+	</div>
+
+	<div id="container">
+		<form name="form" id="form" class="hide" method="POST">
+			<div class="form-group">
+				<label for="board">Board:</label>
+				<select name="board" id="board" class="form-control"></select>
+			</div>
+			<div class="form-group">
+				<label for="column">Column:</label>
+				<select name="column" id="column" class="form-control"></select>
+			</div>
+			<div class="form-group">
+				<label for="title">Issue title:</label>
+				<input type="text" name="title" id="title" class="form-control" required="required">
+			</div>
+			<div class="form-group">
+				<label for="description">Issue description: (supports <a href="https://guides.github.com/features/mastering-markdown/">Markdown</a>)</label>
+				<textarea name="descritpion" id="description" rows="10" class="form-control" required="required"></textarea>
+			</div>
+			<div class="form-group">
+				<label>Image to be attached:</label>
+				<div id="image" class="form-control"></div>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="pull-right submit">Submit issue</button>
+			</div>
+			<div class="clearfix"></div>
+		</form>
+
+		<div id="message"></div>
+	</div>
+	<script src="popup.js"></script>
+</body>
+
+</html>
