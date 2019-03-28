@@ -2,7 +2,14 @@
 
 ## How to use
 
-TODO
+1. Download the `glo_capture-1.0-fx.xpi` file from the releases section.
+2. Go to `about:addons` in firefox.
+3. Click on the gear icon and select `Install add-on from file`.
+4. Select the file we downloaded earlier and allow permissions.
+
+In order to use the addon you will need a PAT token from Gitkraken, follow the steps in the addon to generate and enter this PAT token.
+
+You can then start to capture your issues directly from the browser.
 
 ## Supported/tested browsers
 
@@ -24,3 +31,4 @@ TODO
 - Better styling.
 - User assignment
 - Due date assignment
+- Options screen to change token
