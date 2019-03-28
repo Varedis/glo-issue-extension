@@ -11,6 +11,8 @@ In order to use the addon you will need a PAT token from Gitkraken, follow the s
 
 You can then start to capture your issues directly from the browser.
 
+![](https://i.imgur.com/sMpJjty.png)
+
 ## Supported/tested browsers
 
 - Firefox
